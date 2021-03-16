@@ -1,9 +1,9 @@
-# mailserver-autosetup
-Script for automatic setup mail server on Debian 10 Buster
+# mail
+Скрипт автоматической настройки почтового сервера на Debian 10 Buster
 
-Usage:
-1. Start mailserver-setup.sh, Specity mail server short hostname, domain name and local IP. When the script finishes copy postgres password and replace with PASSWORD string into mailuser-addnew.sh and mailuser-setpass.sh
-2. Replace master.cf in /etc/postfix
-3. Generate SSL and DKIM, add DKIM record into /etc/rspamd/dkim_selectors.map
-4. Restart the server
-5. Use mailuser-addnew.sh for creating new mail user, us mailuser-setpass.sh for changing passwords for existing users.
+Использование:
+1. Запустите mailserver-setup.sh, укажите короткое имя хоста почтового сервера Specity, имя домена и локальный IP-адрес. Когда скрипт завершит работу, скопируйте пароль postgres и замените его строкой PASSWORD в mailuser-addnew.sh и mailuser-setpass.sh.
+2. Заменить master.cf в / etc / postfix
+3. Сгенерируйте SSL и DKIM, добавьте запись DKIM в /etc/rspamd/dkim_selectors.map.
+4. Перезагрузите сервер.
+5. Используйте mailuser-addnew.sh для создания нового почтового пользователя, используя mailuser-setpass.sh для изменения паролей для существующих пользователей. 
